@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C16671E16A5A28A00352FB7 /* TEListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16671D16A5A28A00352FB7 /* TEListViewController.m */; };
+		1C16672116A6A45100352FB7 /* TEEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16672016A6A45100352FB7 /* TEEditViewController.m */; };
+		1C16672316A6CAA500352FB7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C16672216A6CAA500352FB7 /* libsqlite3.dylib */; };
+		1C18F51D16A2A6EC001FF82B /* TEGetSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C18F51C16A2A6EC001FF82B /* TEGetSupporter.m */; };
+		1C18F52016A2B096001FF82B /* TEFinishSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C18F51F16A2B096001FF82B /* TEFinishSupporter.m */; };
+		1C18F52316A2B1BA001FF82B /* TECommandCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C18F52216A2B1BA001FF82B /* TECommandCenter.m */; };
+		1C1911CE169FD8D800B5639B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1911CD169FD8D800B5639B /* UIKit.framework */; };
+		1C1911D0169FD8D800B5639B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1911CF169FD8D800B5639B /* Foundation.framework */; };
+		1C1911D2169FD8D800B5639B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1911D1169FD8D800B5639B /* CoreGraphics.framework */; };
+		1C1911D8169FD8D800B5639B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C1911D6169FD8D800B5639B /* InfoPlist.strings */; };
+		1C1911DA169FD8D800B5639B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1911D9169FD8D800B5639B /* main.m */; };
+		1C1911DE169FD8D800B5639B /* TEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1911DD169FD8D800B5639B /* TEAppDelegate.m */; };
+		1C1911E0169FD8D800B5639B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C1911DF169FD8D800B5639B /* Default.png */; };
+		1C1911E2169FD8D800B5639B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C1911E1169FD8D800B5639B /* Default@2x.png */; };
+		1C1911E4169FD8D800B5639B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C1911E3169FD8D800B5639B /* Default-568h@2x.png */; };
+		1C1911F4169FE0AF00B5639B /* NSDateFormatter+RFC3339.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1911F3169FE0AF00B5639B /* NSDateFormatter+RFC3339.m */; };
+		1C1911F9169FE49D00B5639B /* TEVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1911F8169FE49D00B5639B /* TEVersion.m */; };
+		1C1911FF169FE8DB00B5639B /* TEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1911FE169FE8DB00B5639B /* TEConnection.m */; };
+		1C191202169FF47E00B5639B /* NSString+QueryParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C191201169FF47E00B5639B /* NSString+QueryParams.m */; };
+		1C19120516A00A4300B5639B /* TEText.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19120416A00A4300B5639B /* TEText.m */; };
+		1C19121016A00A6400B5639B /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19120916A00A6400B5639B /* EGODatabase.m */; };
+		1C19121116A00A6400B5639B /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19120B16A00A6400B5639B /* EGODatabaseRequest.m */; };
+		1C19121216A00A6400B5639B /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19120D16A00A6400B5639B /* EGODatabaseResult.m */; };
+		1C19121316A00A6400B5639B /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19120F16A00A6400B5639B /* EGODatabaseRow.m */; };
+		1C19121916A12B8500B5639B /* TEExecuter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19121816A12B8500B5639B /* TEExecuter.m */; };
+		1C19122116A189C900B5639B /* TECheckSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19122016A189C900B5639B /* TECheckSupporter.m */; };
+		1C19122416A18CF600B5639B /* TEPostSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C19122316A18CF600B5639B /* TEPostSupporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C16671C16A5A28A00352FB7 /* TEListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEListViewController.h; path = ViewControllers/TEListViewController.h; sourceTree = "<group>"; };
+		1C16671D16A5A28A00352FB7 /* TEListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEListViewController.m; path = ViewControllers/TEListViewController.m; sourceTree = "<group>"; };
+		1C16671F16A6A45100352FB7 /* TEEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEEditViewController.h; path = ViewControllers/TEEditViewController.h; sourceTree = "<group>"; };
+		1C16672016A6A45100352FB7 /* TEEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEEditViewController.m; path = ViewControllers/TEEditViewController.m; sourceTree = "<group>"; };
+		1C16672216A6CAA500352FB7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1C18F51B16A2A6EC001FF82B /* TEGetSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEGetSupporter.h; path = Workflow/Supporter/TEGetSupporter.h; sourceTree = "<group>"; };
+		1C18F51C16A2A6EC001FF82B /* TEGetSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEGetSupporter.m; path = Workflow/Supporter/TEGetSupporter.m; sourceTree = "<group>"; };
+		1C18F51E16A2B096001FF82B /* TEFinishSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEFinishSupporter.h; path = Workflow/Supporter/TEFinishSupporter.h; sourceTree = "<group>"; };
+		1C18F51F16A2B096001FF82B /* TEFinishSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEFinishSupporter.m; path = Workflow/Supporter/TEFinishSupporter.m; sourceTree = "<group>"; };
+		1C18F52116A2B1BA001FF82B /* TECommandCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TECommandCenter.h; path = Workflow/TECommandCenter.h; sourceTree = "<group>"; };
+		1C18F52216A2B1BA001FF82B /* TECommandCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TECommandCenter.m; path = Workflow/TECommandCenter.m; sourceTree = "<group>"; };
+		1C1911C9169FD8D800B5639B /* TextEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C1911CD169FD8D800B5639B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C1911CF169FD8D800B5639B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C1911D1169FD8D800B5639B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C1911D5169FD8D800B5639B /* TextEase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextEase-Info.plist"; sourceTree = "<group>"; };
+		1C1911D7169FD8D800B5639B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C1911D9169FD8D800B5639B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C1911DB169FD8D800B5639B /* TextEase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextEase-Prefix.pch"; sourceTree = "<group>"; };
+		1C1911DC169FD8D800B5639B /* TEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEAppDelegate.h; sourceTree = "<group>"; };
+		1C1911DD169FD8D800B5639B /* TEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEAppDelegate.m; sourceTree = "<group>"; };
+		1C1911DF169FD8D800B5639B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1C1911E1169FD8D800B5639B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1C1911E3169FD8D800B5639B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1C1911F2169FE0AF00B5639B /* NSDateFormatter+RFC3339.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+RFC3339.h"; path = "Categories/NSDateFormatter+RFC3339.h"; sourceTree = "<group>"; };
+		1C1911F3169FE0AF00B5639B /* NSDateFormatter+RFC3339.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+RFC3339.m"; path = "Categories/NSDateFormatter+RFC3339.m"; sourceTree = "<group>"; };
+		1C1911F7169FE49D00B5639B /* TEVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEVersion.h; path = Model/TEVersion.h; sourceTree = "<group>"; };
+		1C1911F8169FE49D00B5639B /* TEVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEVersion.m; path = Model/TEVersion.m; sourceTree = "<group>"; };
+		1C1911FD169FE8DB00B5639B /* TEConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEConnection.h; path = Network/TEConnection.h; sourceTree = "<group>"; };
+		1C1911FE169FE8DB00B5639B /* TEConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEConnection.m; path = Network/TEConnection.m; sourceTree = "<group>"; };
+		1C191200169FF47E00B5639B /* NSString+QueryParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+QueryParams.h"; path = "Categories/NSString+QueryParams.h"; sourceTree = "<group>"; };
+		1C191201169FF47E00B5639B /* NSString+QueryParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+QueryParams.m"; path = "Categories/NSString+QueryParams.m"; sourceTree = "<group>"; };
+		1C19120316A00A4300B5639B /* TEText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEText.h; path = Model/TEText.h; sourceTree = "<group>"; };
+		1C19120416A00A4300B5639B /* TEText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEText.m; path = Model/TEText.m; sourceTree = "<group>"; };
+		1C19120816A00A6400B5639B /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		1C19120916A00A6400B5639B /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		1C19120A16A00A6400B5639B /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		1C19120B16A00A6400B5639B /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		1C19120C16A00A6400B5639B /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		1C19120D16A00A6400B5639B /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		1C19120E16A00A6400B5639B /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		1C19120F16A00A6400B5639B /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		1C19121516A0526B00B5639B /* TEApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEApi.h; path = Workflow/TEApi.h; sourceTree = "<group>"; };
+		1C19121716A12B8500B5639B /* TEExecuter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEExecuter.h; path = Workflow/TEExecuter.h; sourceTree = "<group>"; };
+		1C19121816A12B8500B5639B /* TEExecuter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEExecuter.m; path = Workflow/TEExecuter.m; sourceTree = "<group>"; };
+		1C19121E16A151B800B5639B /* TESupporterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TESupporterProtocol.h; path = Workflow/Supporter/TESupporterProtocol.h; sourceTree = "<group>"; };
+		1C19121F16A189C900B5639B /* TECheckSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TECheckSupporter.h; path = Workflow/Supporter/TECheckSupporter.h; sourceTree = "<group>"; };
+		1C19122016A189C900B5639B /* TECheckSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TECheckSupporter.m; path = Workflow/Supporter/TECheckSupporter.m; sourceTree = "<group>"; };
+		1C19122216A18CF600B5639B /* TEPostSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEPostSupporter.h; path = Workflow/Supporter/TEPostSupporter.h; sourceTree = "<group>"; };
+		1C19122316A18CF600B5639B /* TEPostSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEPostSupporter.m; path = Workflow/Supporter/TEPostSupporter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C1911C6169FD8D800B5639B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C16672316A6CAA500352FB7 /* libsqlite3.dylib in Frameworks */,
+				1C1911CE169FD8D800B5639B /* UIKit.framework in Frameworks */,
+				1C1911D0169FD8D800B5639B /* Foundation.framework in Frameworks */,
+				1C1911D2169FD8D800B5639B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C16671A16A5A26000352FB7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C16671C16A5A28A00352FB7 /* TEListViewController.h */,
+				1C16671D16A5A28A00352FB7 /* TEListViewController.m */,
+				1C16671F16A6A45100352FB7 /* TEEditViewController.h */,
+				1C16672016A6A45100352FB7 /* TEEditViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1C1911BE169FD8D800B5639B = {
+			isa = PBXGroup;
+			children = (
+				1C1911F1169FE00800B5639B /* Categories */,
+				1C1911F6169FE48700B5639B /* Model */,
+				1C1911F0169FDAB100B5639B /* Network */,
+				1C19121416A0523900B5639B /* Workflow */,
+				1C16671A16A5A26000352FB7 /* ViewControllers */,
+				1C19120616A00A6400B5639B /* ThirdParty */,
+				1C1911D3169FD8D800B5639B /* TextEase */,
+				1C1911CC169FD8D800B5639B /* Frameworks */,
+				1C1911CA169FD8D800B5639B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C1911CA169FD8D800B5639B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C1911C9169FD8D800B5639B /* TextEase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C1911CC169FD8D800B5639B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C16672216A6CAA500352FB7 /* libsqlite3.dylib */,
+				1C1911CD169FD8D800B5639B /* UIKit.framework */,
+				1C1911CF169FD8D800B5639B /* Foundation.framework */,
+				1C1911D1169FD8D800B5639B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C1911D3169FD8D800B5639B /* TextEase */ = {
+			isa = PBXGroup;
+			children = (
+				1C1911DC169FD8D800B5639B /* TEAppDelegate.h */,
+				1C1911DD169FD8D800B5639B /* TEAppDelegate.m */,
+				1C1911D4169FD8D800B5639B /* Supporting Files */,
+			);
+			path = TextEase;
+			sourceTree = "<group>";
+		};
+		1C1911D4169FD8D800B5639B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C1911D5169FD8D800B5639B /* TextEase-Info.plist */,
+				1C1911D6169FD8D800B5639B /* InfoPlist.strings */,
+				1C1911D9169FD8D800B5639B /* main.m */,
+				1C1911DB169FD8D800B5639B /* TextEase-Prefix.pch */,
+				1C1911DF169FD8D800B5639B /* Default.png */,
+				1C1911E1169FD8D800B5639B /* Default@2x.png */,
+				1C1911E3169FD8D800B5639B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C1911F0169FDAB100B5639B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1C1911FD169FE8DB00B5639B /* TEConnection.h */,
+				1C1911FE169FE8DB00B5639B /* TEConnection.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1C1911F1169FE00800B5639B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1C1911F2169FE0AF00B5639B /* NSDateFormatter+RFC3339.h */,
+				1C1911F3169FE0AF00B5639B /* NSDateFormatter+RFC3339.m */,
+				1C191200169FF47E00B5639B /* NSString+QueryParams.h */,
+				1C191201169FF47E00B5639B /* NSString+QueryParams.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		1C1911F6169FE48700B5639B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C1911F7169FE49D00B5639B /* TEVersion.h */,
+				1C1911F8169FE49D00B5639B /* TEVersion.m */,
+				1C19120316A00A4300B5639B /* TEText.h */,
+				1C19120416A00A4300B5639B /* TEText.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1C19120616A00A6400B5639B /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1C19120716A00A6400B5639B /* EGODatabase */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		1C19120716A00A6400B5639B /* EGODatabase */ = {
+			isa = PBXGroup;
+			children = (
+				1C19120816A00A6400B5639B /* EGODatabase.h */,
+				1C19120916A00A6400B5639B /* EGODatabase.m */,
+				1C19120A16A00A6400B5639B /* EGODatabaseRequest.h */,
+				1C19120B16A00A6400B5639B /* EGODatabaseRequest.m */,
+				1C19120C16A00A6400B5639B /* EGODatabaseResult.h */,
+				1C19120D16A00A6400B5639B /* EGODatabaseResult.m */,
+				1C19120E16A00A6400B5639B /* EGODatabaseRow.h */,
+				1C19120F16A00A6400B5639B /* EGODatabaseRow.m */,
+			);
+			path = EGODatabase;
+			sourceTree = "<group>";
+		};
+		1C19121416A0523900B5639B /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				1C19121616A0549B00B5639B /* Supporter */,
+				1C19121716A12B8500B5639B /* TEExecuter.h */,
+				1C19121816A12B8500B5639B /* TEExecuter.m */,
+				1C18F52116A2B1BA001FF82B /* TECommandCenter.h */,
+				1C18F52216A2B1BA001FF82B /* TECommandCenter.m */,
+				1C19121516A0526B00B5639B /* TEApi.h */,
+			);
+			name = Workflow;
+			sourceTree = "<group>";
+		};
+		1C19121616A0549B00B5639B /* Supporter */ = {
+			isa = PBXGroup;
+			children = (
+				1C19121E16A151B800B5639B /* TESupporterProtocol.h */,
+				1C19121F16A189C900B5639B /* TECheckSupporter.h */,
+				1C19122016A189C900B5639B /* TECheckSupporter.m */,
+				1C19122216A18CF600B5639B /* TEPostSupporter.h */,
+				1C19122316A18CF600B5639B /* TEPostSupporter.m */,
+				1C18F51B16A2A6EC001FF82B /* TEGetSupporter.h */,
+				1C18F51C16A2A6EC001FF82B /* TEGetSupporter.m */,
+				1C18F51E16A2B096001FF82B /* TEFinishSupporter.h */,
+				1C18F51F16A2B096001FF82B /* TEFinishSupporter.m */,
+			);
+			name = Supporter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C1911C8169FD8D800B5639B /* TextEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C1911ED169FD8D800B5639B /* Build configuration list for PBXNativeTarget "TextEase" */;
+			buildPhases = (
+				1C1911C5169FD8D800B5639B /* Sources */,
+				1C1911C6169FD8D800B5639B /* Frameworks */,
+				1C1911C7169FD8D800B5639B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextEase;
+			productName = TextEase;
+			productReference = 1C1911C9169FD8D800B5639B /* TextEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C1911C0169FD8D800B5639B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TE;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Studyro Studio";
+			};
+			buildConfigurationList = 1C1911C3169FD8D800B5639B /* Build configuration list for PBXProject "TextEase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C1911BE169FD8D800B5639B;
+			productRefGroup = 1C1911CA169FD8D800B5639B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C1911C8169FD8D800B5639B /* TextEase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C1911C7169FD8D800B5639B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1911D8169FD8D800B5639B /* InfoPlist.strings in Resources */,
+				1C1911E0169FD8D800B5639B /* Default.png in Resources */,
+				1C1911E2169FD8D800B5639B /* Default@2x.png in Resources */,
+				1C1911E4169FD8D800B5639B /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C1911C5169FD8D800B5639B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1911DA169FD8D800B5639B /* main.m in Sources */,
+				1C1911DE169FD8D800B5639B /* TEAppDelegate.m in Sources */,
+				1C1911F4169FE0AF00B5639B /* NSDateFormatter+RFC3339.m in Sources */,
+				1C1911F9169FE49D00B5639B /* TEVersion.m in Sources */,
+				1C1911FF169FE8DB00B5639B /* TEConnection.m in Sources */,
+				1C191202169FF47E00B5639B /* NSString+QueryParams.m in Sources */,
+				1C19120516A00A4300B5639B /* TEText.m in Sources */,
+				1C19121016A00A6400B5639B /* EGODatabase.m in Sources */,
+				1C19121116A00A6400B5639B /* EGODatabaseRequest.m in Sources */,
+				1C19121216A00A6400B5639B /* EGODatabaseResult.m in Sources */,
+				1C19121316A00A6400B5639B /* EGODatabaseRow.m in Sources */,
+				1C19121916A12B8500B5639B /* TEExecuter.m in Sources */,
+				1C19122116A189C900B5639B /* TECheckSupporter.m in Sources */,
+				1C19122416A18CF600B5639B /* TEPostSupporter.m in Sources */,
+				1C18F51D16A2A6EC001FF82B /* TEGetSupporter.m in Sources */,
+				1C18F52016A2B096001FF82B /* TEFinishSupporter.m in Sources */,
+				1C18F52316A2B1BA001FF82B /* TECommandCenter.m in Sources */,
+				1C16671E16A5A28A00352FB7 /* TEListViewController.m in Sources */,
+				1C16672116A6A45100352FB7 /* TEEditViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C1911D6169FD8D800B5639B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C1911D7169FD8D800B5639B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C1911EB169FD8D800B5639B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C1911EC169FD8D800B5639B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C1911EE169FD8D800B5639B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextEase/TextEase-Prefix.pch";
+				INFOPLIST_FILE = "TextEase/TextEase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1C1911EF169FD8D800B5639B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextEase/TextEase-Prefix.pch";
+				INFOPLIST_FILE = "TextEase/TextEase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C1911C3169FD8D800B5639B /* Build configuration list for PBXProject "TextEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C1911EB169FD8D800B5639B /* Debug */,
+				1C1911EC169FD8D800B5639B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C1911ED169FD8D800B5639B /* Build configuration list for PBXNativeTarget "TextEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C1911EE169FD8D800B5639B /* Debug */,
+				1C1911EF169FD8D800B5639B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C1911C0169FD8D800B5639B /* Project object */;
+}
